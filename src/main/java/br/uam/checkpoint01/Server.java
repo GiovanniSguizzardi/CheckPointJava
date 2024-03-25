@@ -7,7 +7,7 @@ package br.uam.checkpoint01;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 
-public class Servidor {
+public class Server {
     public void rodarServidor() throws Exception {
         System.out.println("Servidor iniciado!");
         DatagramSocket socket = new DatagramSocket(5252);
@@ -29,8 +29,8 @@ public class Servidor {
 
     public static void main(String[] args) {
         try {
-            Servidor servidor = new Servidor();
-            servidor.rodarServidor();
+            Server server = new Server();
+            server.rodarServidor();
         } catch(Exception e){
             e.printStackTrace();
         }

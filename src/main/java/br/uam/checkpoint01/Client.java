@@ -10,7 +10,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.Scanner;
 
-public class Cliente {
+public class Client {
     public void comunicarServidor() throws Exception {
         DatagramSocket socket = new DatagramSocket();
         InetAddress address = InetAddress.getByName("localhost");
@@ -38,8 +38,8 @@ public class Cliente {
 
     public static void main(String[] args) {
         try {
-            Cliente cliente = new Cliente();
-            cliente.comunicarServidor();
+            Client client = new Client();
+            client.comunicarServidor();
         } catch(Exception e){
             e.printStackTrace();
         }

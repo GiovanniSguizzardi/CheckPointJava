@@ -3,9 +3,10 @@
  */
 
 package br.uam.checkpoint01;
+
 public class ConexaoUDP {
 
     public ConexaoUDP() {
-        System.out.println("Programa para enviar as informações de um Produto via conexão UDP");
+        System.out.println("Programa para enviar datagramas em conexão UDP");
     }
 }
